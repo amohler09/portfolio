@@ -19,8 +19,8 @@
     position: absolute;
     text-align: center;
     padding: 8%;
-    top: 15%;
-    left: 30%;
+    top: 5%;
+    left: 35%;
   }
 
   .name h1 {
@@ -48,19 +48,19 @@
     color: white;
     font-size: 2.5rem;
     padding: 5%;
-    top: 40%;
-    left: 15%;
+    top: 30%;
+    left: 18%;
   }
 
   .star-button-1 {
-    background-color: rgba(28, 123, 157, 0.605);
+    background-color: rgba(106, 161, 203, 0.605);
     border: none;
     box-shadow: -5px 5px 5px rgba(0, 5, 63, 0.797);
     position: absolute;
     padding: 2%;
     border-radius: 180px;
-    top: 50%;
-    left: 70%;
+    top: 42%;
+    left: 69%;
   }
 
   .star-button-1:hover {
@@ -78,17 +78,53 @@
                 0 0 0 30px rgba(245, 245, 245, 0.120),
                 0 0 0 20px rgba(245, 245, 245, 0.120),
                 0 0 0 10px rgba(245, 245, 245, 0.120);
+    animation-name: ripple;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes ripple {
+    0% {transform: scale3d(0.75,0.75,1);}
+    50% {transform: scale3d(1.15,1.15,.75);}
+    100% {transform: scale3d(0.75,0.75,1)}
   }
 
   .star-button-2 {
-    background-color: rgba(255, 255, 255, 0.66);
+    background-color: rgba(255, 255, 255, 0.666);
     border: none;
     box-shadow: -5px 5px 5px rgba(0, 5, 63, 0.797);
     position: absolute;
     padding: 1%;
     border-radius: 180px;
-    top: 60%;
-    left: 30%;
+    top: 52%;
+    left: 55%;
+    outline: none;
+  }
+  .star-button-2:hover {
+    background-color: rgba(228, 213, 44, 0.44);
+  }
+  .star-button-2:hover #about-me {
+    display: block;
+    background-color: rgba(5, 22, 43, 0.516);
+  }
+
+  .about-me-show {
+    width: 30%;
+    position: absolute;
+    padding: 2%;
+    top: 55%;
+    left: 59%;
+    text-align: justify;
+    color: rgb(216, 216, 199);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: -15px 15px 8px rgba(1, 1, 55, 0.242);
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    background-color: rgba(230, 213, 28, 0.205);
+  }
+
+  .about-me-hide {
+    display: none;
   }
 
   .star-button-3 {
@@ -98,8 +134,8 @@
     position: absolute;
     padding: 1.5%;
     border-radius: 180px;
-    top: 70%;
-    left: 45%;
+    top: 60%;
+    left: 40%;
   }
 
   .star-button-3:hover {
@@ -117,15 +153,23 @@
                 0 0 0 30px rgba(245, 245, 245, 0.120),
                 0 0 0 20px rgba(245, 245, 245, 0.120),
                 0 0 0 10px rgba(245, 245, 245, 0.120);
+    animation-name: ripple;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
   }
 
-  .star-button-4 {
-    background-color: rgba(255, 255, 255, 0.666);
-    border: none;
-    box-shadow: -5px 5px 5px rgba(0, 5, 63, 0.797);
-    position: absolute;
-    padding: 1%;
-    border-radius: 180px;
-    top: 65%;
-    left: 65%;
+  
+
+  .projects {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin: 5% auto;
+    border: 1px solid red;
+  }
+
+  iframe {
+    width: 50%;
+    height: 300px;
+    margin: 5% auto;
   }
