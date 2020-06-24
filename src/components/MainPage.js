@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Lato',
         fontStyle: 'italic',
         textAlign: 'center',
-        
+        lineHeight: '40px',
         boxShadow: '-5px 5px 20px rgba(203, 170, 52, 0.637)',
         position: 'sticky',
         color: 'white',
@@ -91,7 +91,8 @@ const useStyles = makeStyles((theme) => ({
             marginBottom: '-10%'
         },
         '@media(max-width: 599px)': {
-            fontSize: '1rem'
+            fontSize: '1rem',
+            lineHeight: '20px',
         }},
     nav: {
         width: '25%',
@@ -104,6 +105,15 @@ const useStyles = makeStyles((theme) => ({
             top: '35%'
         },
         '@media(min-width: 501px)': {
+            width: '30%',
+            top: '35%'
+        },
+        '@media(min-width: 601px)': {
+            width: '25%',
+            top: '45%'
+        },
+        '@media(min-width: 801px)': {
+            width: '20%',
             top: '50%'
         },
         // '@media(max-width: 700px)': {

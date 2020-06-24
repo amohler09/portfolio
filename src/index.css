@@ -117,7 +117,9 @@
   }
 
   /*Resume CSS*/
-
+.link {
+  background-color: red;
+}
 .resume-title {
   position: absolute;
   margin: auto;
